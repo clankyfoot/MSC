@@ -1,0 +1,61 @@
+﻿body{
+    background-image: url('../Content/Images/859730_525763124112508_1499232603_o.jpg');
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 1.0);
+    /* possibly put an image in the backgroung */
+}
+
+header, footer {
+    width: 98%;
+    height: 23%;
+    background-color: rgba(128, 128, 128, 0.80);
+    border: solid thin black;
+    padding: 1%;
+}
+
+div #logo {
+    text-align: center;
+}
+
+#menu li {
+    display: inline;
+    text-align: right;
+}
+    
+    #menu li a {
+        text-decoration: none;
+        color: rgba(36, 36, 36, 1.0);
+        font-weight: bold;
+        font-size: 1.22em;
+    }
+
+div#body {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    padding: 3%;
+    width: 90%;
+    height: auto; /* adjusts to fit with whatever the width is*/
+    background-color: rgba(255, 255, 255, 0.90);
+    font-size: 1em;
+}
+
+footer{
+    
+}
+
+#social {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+    #social ul li {
+        display: inline;
+    }
+
+.icon { 
+    width: 5%;
+    height: auto;
+}
