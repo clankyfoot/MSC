@@ -181,6 +181,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\JumpingController.cs" />
     <Compile Include="Controllers\MSCController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
@@ -268,11 +269,12 @@
     <Content Include="Scripts\knockout-2.2.0.debug.js" />
     <Content Include="Scripts\knockout-2.2.0.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
-    <Content Include="Views\MSC\Contact.aspx" />
-    <Content Include="Views\MSC\Faq.aspx" />
-    <Content Include="Views\MSC\GettingStarted.aspx" />
+    <Content Include="Views\Jumping\Contact.aspx" />
+    <Content Include="Views\Jumping\Faq.aspx" />
+    <Content Include="Views\Jumping\GettingStarted.aspx" />
+    <Content Include="Views\Jumping\Index.aspx" />
     <Content Include="Views\MSC\Index.aspx" />
-    <Content Include="Views\MSC\Schedule.aspx" />
+    <Content Include="Views\Jumping\Schedule.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -297,6 +299,7 @@
     <Content Include="Images\orderedList9.png" />
     <Content Include="Views\Shared\Site.Master" />
     <Content Include="Views\Web.config" />
+    <Content Include="Views\Shared\MSC.Master" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
