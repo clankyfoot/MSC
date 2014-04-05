@@ -190,6 +190,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\FrontPage.css" />
     <Content Include="Content\Images\859730_525763124112508_1499232603_o.jpg" />
     <Content Include="Content\Images\Icons\facebook.png" />
     <Content Include="Content\Images\Icons\mail.png" />
@@ -254,6 +255,7 @@
     <Content Include="Content\SkierForms\waiver-2012.pdf" />
     <Content Include="Content\SkierForms\adult-skier-registration.pdf" />
     <Content Include="Content\SkierForms\supporter-membership-application.pdf" />
+    <None Include="Properties\PublishProfiles\msc.pubxml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
@@ -275,7 +277,9 @@
     <Content Include="Views\Jumping\Index.aspx" />
     <Content Include="Views\MSC\Index.aspx" />
     <Content Include="Views\Jumping\Schedule.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>

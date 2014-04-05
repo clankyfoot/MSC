@@ -1,0 +1,54 @@
+﻿body{
+    background-image: url('../Content/Images/859730_525763124112508_1499232603_o.jpg');
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 1.0);
+    /* possibly put an image in the backgroung */
+}
+
+div#body {
+    background-color: rgba(128, 128, 128, 0.86);
+    border: solid thin black;
+    padding: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    padding: 3%;
+    width: 40%;
+    height: auto; /* adjusts to fit with whatever the width is*/
+    background-color: rgba(255, 255, 255, 0.80);
+    font-size: 1em;
+}
+
+    div#body a {
+        text-decoration: none;
+        color: rgb(25, 25, 25);
+        margin: 2%;
+        font-size: 1.33em;
+        text-shadow: inherit;
+    }
+
+    div#body a:hover {
+        text-shadow: 2px 2px 2px rgba(128, 128, 128, 0.86);
+    }
+
+.footer {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+#main-nav {
+    margin: auto;
+    text-align: left;
+}
+
+table {
+    font-weight: bold;
+    width: 70%;
+}
+
+table tr td {
+    /*margin: 2%;*/
+    width: auto;
+    padding: 1%;
+}

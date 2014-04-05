@@ -1,0 +1,34 @@
+USE [shotski]
+GO
+
+IF(OBJECT_ID('cf_Event_Update_Name_ById') IS NOT NULL)
+BEGIN
+	DROP PROCEDURE cf_Event_Update_Name_ById
+END
+GO
+/*
+	RETURNS...
+*/
+CREATE PROCEDURE cf_Event_Update_Name_ById
+	@Name INT, -- REQURIED
+	@id DATETIME -- REQUIRED
+AS
+BEGIN
+	DECLARE @RETURN INT
+	SET @RETURN = 0
+	IF(@Name IS NOT NULL AND @id IS NOT NULL)
+	BEGIN TRY
+		UPDATE [Event]
+		SET [name] = @Name
+		WHERE event_id = @id
+
+		SET @RETURN = 1
+	END TRY
+	BEGIN CATCH
+		SET @RETURN = ERROR_MESSAGE()
+	END CATCH
+
+	RETURN @RETURN 
+END
+GO
+

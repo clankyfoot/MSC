@@ -83,3 +83,4 @@ C:\Users\CodeBracket\Documents\Visual Studio 2013\Projects\MinneapolisSkiClub\Mi
 C:\Users\CodeBracket\Documents\Visual Studio 2013\Projects\MinneapolisSkiClub\MinneapolisSkiClub\bin\zh-Hant\System.Spatial.resources.dll
 C:\Users\CodeBracket\Documents\Visual Studio 2013\Projects\MinneapolisSkiClub\MinneapolisSkiClub\obj\Debug\MinneapolisSkiClub.dll
 C:\Users\CodeBracket\Documents\Visual Studio 2013\Projects\MinneapolisSkiClub\MinneapolisSkiClub\obj\Debug\MinneapolisSkiClub.pdb
+C:\Users\CodeBracket\Documents\Visual Studio 2013\Projects\MinneapolisSkiClub\MinneapolisSkiClub\obj\Debug\MinneapolisSkiClub.csprojResolveAssemblyReference.cache

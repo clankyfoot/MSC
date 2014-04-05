@@ -1,29 +1,21 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/MSC.Master" Inherits="System.Web.Mvc.ViewPage<dynamic>" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
-    Index
+    Welcome
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <h2>Welcome</h2>
-    <p>
-        Welcome to the Minneapolis Ski Club website!
-    </p>
-    <table>
+    <div style="width: 60%; margin: auto;">
+        <h2 style="text-align: center;">Welcome</h2>
+        <p>Welcome to the Minneapolis Ski Club website!</p>
+        <p>Choose which type of skier you are!</p>
+    </div>
+    <table id="main-nav">
         <tbody>
             <tr>
-                <td><a href="http://minneapolisskiclub.wordpress.com/">Go to our Cross Country Skiing</a></td>
-                <td><a href="https://www.facebook.com/mnskiclub">Go to ski Jumping</a></td>
+                <td style="float: left;"><a href="http://minneapolisskiclub.wordpress.com/">Go to Cross <br />Country Skiing</a></td>
+                <td style="float: right;"><a href="https://www.facebook.com/mnskiclub">Go to ski Jumping</a></td>
             </tr>
         </tbody>
     </table>
-</asp:Content>
-
-<asp:Content ID="Content3" ContentPlaceHolderID="ScriptContent" runat="server">
-</asp:Content>
-
-<asp:Content ID="Content4" ContentPlaceHolderID="StyleContent" runat="server">
-</asp:Content>
-
-<asp:Content ID="Content5" ContentPlaceHolderID="FooterContent" runat="server">
 </asp:Content>

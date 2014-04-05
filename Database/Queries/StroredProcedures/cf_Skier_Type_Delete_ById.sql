@@ -1,0 +1,32 @@
+USE [shotski]
+GO
+
+IF(OBJECT_ID('cf_Skier_Type_Delete_ById') IS NOT NULL)
+BEGIN
+	DROP PROCEDURE cf_Skier_Type_Delete_ById
+END
+GO
+/*
+	RETURNS...
+*/
+CREATE PROCEDURE cf_Skier_Type_Delete_ById
+	@id VARCHAR(100) -- REQUIRED
+AS
+BEGIN
+	DECLARE @RETURN INT
+	SET @RETURN = 0
+
+	IF(@id IS NOT NULL)
+	BEGIN TRY
+		DELETE FROM SkierType 
+		WHERE skier_type_id = @id
+
+		SET @RETURN = 1
+	END TRY
+	BEGIN CATCH
+		SET @RETURN = ERROR_NUMBER()
+	END CATCH
+
+	RETURN @RETURN
+END
+GO

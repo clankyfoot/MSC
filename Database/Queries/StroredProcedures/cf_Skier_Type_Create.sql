@@ -1,0 +1,34 @@
+USE [shotski]
+GO
+
+IF(OBJECT_ID('cf_Skier_Type_Create') IS NOT NULL)
+BEGIN
+	DROP PROCEDURE cf_Skier_Type_Create
+END
+GO
+/*
+	RETURNS...
+
+*/
+CREATE PROCEDURE cf_Skier_Type_Create
+	@skier_type VARCHAR(100) -- REQUIRED
+AS
+BEGIN
+	DECLARE @RETURN INT
+	SET @RETURN = 0
+
+	IF(@skier_type IS NOT NULL)
+	BEGIN TRY
+
+		INSERT INTO SkierType (skier_type)
+		VALUES (@skier_type)
+
+		SET @RETURN = 1
+	END TRY
+	BEGIN CATCH
+		SET @RETURN = ERROR_NUMBER()
+	END CATCH
+
+	RETURN @RETURN
+END
+GO
